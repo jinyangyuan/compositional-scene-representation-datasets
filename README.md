@@ -34,6 +34,16 @@ cd shop-vrb-gen/image_generation_single
 cd ../..
 ```
 
+### Kubric
+
+Synthesize images in the GSO dataset using Kubric. The tested Docker image is kubricdockerhub/kubruntu (sha256:a4152c8066ffbd7bd303e4ea79c3ce250f190368cb07479fb6763308f165a17f).
+
+```bash
+cd kubric/dataset
+./create_dataset.sh
+cd ../..
+```
+
 ### HDF5
 
 Create datasets in the HDF5 format.

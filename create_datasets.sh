@@ -88,7 +88,20 @@ python $folder_src'/create_complex.py' \
     --folder_general $folder_general \
     --folder_out $folder_out
 
-for name in 'shapes' 'mnist' 'dsprites' 'abstract' 'clevr' 'shop'; do
+name='gso'
+path_config='config_'$name'.yaml'
+folder_base='./kubric/dataset'
+folder_train=$folder_base'/3_6'
+folder_general=$folder_base'/7_10'
+folder_out='./rgb'
+python $folder_src'/create_gso.py' \
+    --name $name \
+    --path_config $path_config \
+    --folder_train $folder_train \
+    --folder_general $folder_general \
+    --folder_out $folder_out
+
+for name in 'shapes' 'mnist' 'dsprites' 'abstract' 'clevr' 'shop' 'gso'; do
     path_in='./rgb/'$name'.h5'
     folder_out='.'
     python $folder_src'/convert.py' \

@@ -4,3 +4,6 @@
 [submodule "shop-vrb-gen"]
 	path = shop-vrb-gen
 	url = https://github.com/jinyangyuan/shop-vrb-gen.git
+[submodule "kubric"]
+	path = kubric
+	url = https://github.com/jinyangyuan/kubric.git
